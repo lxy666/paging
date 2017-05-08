@@ -193,6 +193,7 @@
         }
         var pageEnd = document.getElementById("pageEnd");
         var tempStr = "";
+        //当前页面为第一页时，上一页无点击事件，当前页面为最后一页时，下一页无点击事件
         if (currentPage > 1) {
             tempStr += "<a href=\"#\" onClick=\"goPage(" + (currentPage - 1) + "," + psize + ")\"><上一页&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>"
             for (var j = 1; j <= totalPage; j++) {
