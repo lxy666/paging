@@ -19,7 +19,7 @@ goPage(1,15);//指的是当前页为第一页，15条数据为一页
         endRow = (endRow > num) ? num : endRow;
 遍历显示数据实现分页
 
- for (var i = 1; i < (num + 1); i++) {
+      for (var i = 1; i < (num + 1); i++) {
             var irow = itable.rows[i - 1];
             if (i >= startRow && i <= endRow) {
                 irow.style.display = "block";//当前页的数据
@@ -32,8 +32,8 @@ goPage(1,15);//指的是当前页为第一页，15条数据为一页
 当前页为最后一页时，下一页没有点击事件
 否则，上一页和下一页均可使用，点击某一页会跳转到那一页
 
- if (currentPage > 1) {
-            tempStr += "<a href=\"#\" onClick=\"goPage(" + (currentPage - 1) + "," + psize + ")\"><上一页&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>"
+    if (currentPage > 1) {
+            tempStr += "<a href=\"#\" onClick=\"goPage(" + (currentPage - 1) + "," + psize + ")\"><上一页.   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>"
             for (var j = 1; j <= totalPage; j++) {
                 tempStr += "<a href=\"#\" onClick=\"goPage(" + j + "," + psize + ")\">" + j + "&nbsp;&nbsp;&nbsp;</a>"
             }
