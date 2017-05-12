@@ -32,8 +32,8 @@ goPage(1,15);//指的是当前页为第一页，15条数据为一页
 当前页为最后一页时，下一页没有点击事件
 否则，上一页和下一页均可使用，点击某一页会跳转到那一页
 
-    if (currentPage > 1) {
-            tempStr += "<a href=\"#\" onClick=\"goPage(" + (currentPage - 1) + "," + psize + ")\"><上一页.   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>"
+       if (currentPage > 1) {
+            tempStr += "<a href=\"#\" onClick=\"goPage(" + (currentPage - 1) + "," + psize + ")\"><上一页&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>"
             for (var j = 1; j <= totalPage; j++) {
                 tempStr += "<a href=\"#\" onClick=\"goPage(" + j + "," + psize + ")\">" + j + "&nbsp;&nbsp;&nbsp;</a>"
             }
